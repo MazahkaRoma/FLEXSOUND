@@ -13,9 +13,6 @@ import javax.jws.soap.SOAPBinding;
 public interface MusicStreamer {
 
     @WebMethod
-    Long logIn(String remotePcAddress, String login, String password);
-
-    @WebMethod
     boolean streamMusic(long songHash, long userId);
 
     @WebMethod
